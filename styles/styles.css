@@ -1,0 +1,105 @@
+html {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.Header {
+    height: 50px;
+    margin: 50px 10px 50px 10px;
+    line-height: 50px;
+    padding: 0 30% 0 30%;
+}
+
+.Header h1 {
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    border-bottom: 3px solid rgb(70, 70, 70);
+}
+
+.Main .section {
+    margin: 20px 10px 10px 10px;
+    background-color: rgb(245, 176, 240); 
+    padding: 5px;
+}
+
+.Main .section .header {
+    padding: 0 25% 0 25%;
+}
+
+.Main .section .header h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #713784;
+    border-bottom: 4px dashed rgb(70, 70, 70);
+    background-color: rgb(57, 174, 107);
+    padding: 5px;
+}
+
+/* FLEXBOX */
+.Main .section .flex-container {
+    border: 4px inset rgb(43, 61, 153);
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    margin: 10px;
+}
+
+.Main .section .flex-container .caja-flex {
+    border: 1px solid rgb(70, 70, 70);
+    background-color: white;
+    color: black;
+    font-weight: medium;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+.Main .section .flex-container .c1 {
+    background: lightblue;
+    order: 3;
+    flex-grow: 5;
+    flex-basis: 50%;
+}
+
+.Main .section .flex-container  .c2 {
+    background: lightcoral;
+    flex-grow: 2;
+}
+
+.Main .section .flex-container .c3 {
+    background: lightgreen;
+}
+
+/* GRID */
+.Main .section .grid-layout {
+    display: grid;
+    border: 4px outset rgb(43, 61, 153);
+    background-color: #ccc;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px;
+}
+
+.Main .section .grid-layout .caja-grid {
+    width: 100px;
+    line-height: 100px;
+    font-weight: bold;
+    border: 1px solid rgb(70, 70, 70);
+    background-color: rgb(64, 137, 173);
+    margin: 20px;
+    color: white;
+}
+
+.Footer {
+    background: rgb(70, 70, 70);
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    padding: 5px;
+}
